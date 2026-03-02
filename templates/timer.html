@@ -239,6 +239,9 @@
         $('.before-login').show();
         $("#login-form")[0].reset();
         $("#signup-form")[0].reset();
+        $(".list-container").html("<h3>Here's what you did this session:</h3>");
+        $(".history-container").html("<h3>Here's what you have done so far:</h3>");
+
       });
       function cancelExercise() {
         clearTimeout(timeout);
